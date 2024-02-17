@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <header>
+      <section id="title-container">
+        <div class="container mx-auto p-4">
+          <div class="title text-center bg-cyan-700 p-5 text-white">
+            <h2 class="uppercase font-bold text-2xl">Basic Comment box</h2>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="comment-container">
+        <div class="container mx-auto p-4">
+          <div id="comment-box" class="bg-slate-100 w-full h-80 p-8">
+            <div id="comment" class="overflow-auto">
+              <!-- <h4 class="bg-slate-300 text-xl p-3 text-black">hello</h4> -->
+            </div>
+          </div>
+
+          <section id="comment-input" class="mt-5 w-full">
+            <textarea
+              name=""
+              id="comment-input"
+              cols="30"
+              rows="10"
+              class="bg-slate-100 w-full p-4 font-medium"
+            ></textarea>
+          </section>
+
+          <section id="update-btn">
+            <button
+              id="#post"
+              class="w-full bg-green-500 text-white p-2 mt-5 font-medium hover:text-white hover:bg-green-700"
+            >
+              Post
+            </button>
+          </section>
+        </div>
+      </section>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>
